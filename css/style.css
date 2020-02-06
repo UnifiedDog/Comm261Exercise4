@@ -3,11 +3,16 @@ table {
 }
 
 td, th {
-    padding: 0.5rem;
+    padding: 0.25rem;
     text-align: left;
+    border: 1px solid #ccc;
 }
 
 th {
     background: darkblue;
     text-decoration-color: white;
 }
+
+tbody tr:nth-child(odd) {
+    background: #eee;
+  }
