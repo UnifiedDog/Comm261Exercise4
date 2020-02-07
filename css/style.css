@@ -49,13 +49,21 @@ body{
   flex-wrap: wrap;
 }
 
-.form-row input[type='text'] {
+.form-row input[type='text'],
+.form-row input[type='email'] {
   background-color: #FFFFFF;
   border: 1px solid #D6D9DC;
   border-radius: 3px;
   width: 100%;
   padding: 7px;
   font-size: 14px;
+}
+
+.form-row input[type='text']:invalid,
+.form-row input[type='email']:invalid {
+  border: 1px solid #D55C5F;
+  color: #D55C5F;
+  box-shadow: none;
 }
 
 .form-row label {
@@ -79,7 +87,7 @@ th {
 }
 
 tbody tr:hover {
-  background: #eee;
+  background: #5D6063;
 }
 
 @media only screen and (min-width: 700px) {
@@ -92,7 +100,10 @@ tbody tr:hover {
     align-items: flex-start; /* To avoid stretching */
     margin-bottom: 20px;
   }
-  .form-row input[type='text'] {
+  .form-row input[type='text'],
+  .form-row input[type='email'],
+  .form-row select,
+  .form-row textarea {
     width: 250px;
     height: initial;
   }
