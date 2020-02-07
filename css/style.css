@@ -4,13 +4,13 @@ table {
 
 td, th {
     padding: 0.25rem;
-    text-align: center;
+    text-align: left;
     border: 1px solid #ccc;
 }
 
 th {
     background: darkblue;
-    vertical-align: ;
+    text-align: center;
     color: white;
 }
 
